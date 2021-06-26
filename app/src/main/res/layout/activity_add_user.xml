@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".AddUserActivity">
+    <!--Toolbar-->
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/toolbarProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rect01">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:text="Add User"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/toolbarProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_margin="10dp"
+        android:id="@+id/profileIv"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_person_grey"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="2dp" />
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/nameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileIv"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_rect02"
+        android:drawableStart="@drawable/ic_person_grey"
+        android:drawablePadding="5dp"
+        android:hint="Full Name"
+        android:inputType="textPersonName|textCapWords"
+        android:textColorHint="@color/colorGrey01"
+        android:textColor="@color/colorBlack"/>
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/phoneTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameEt"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_rect02"
+        android:drawableStart="@drawable/ic_smartphone_gray"
+        android:drawablePadding="5dp"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:textColorHint="@color/colorGrey01"
+        android:textColor="@color/colorBlack"/>
+    <EditText
+        android:id="@+id/sEmailEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneTv"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_rect02"
+        android:drawableStart="@drawable/ic_mail_grey"
+        android:drawablePadding="5dp"
+        android:hint="Email Address"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/colorGrey01"
+        android:textColor="@color/colorBlack"/>
+    <Button
+        android:id="@+id/updateBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sEmailEt"
+        android:layout_centerHorizontal="true"
+        android:minWidth="120dp"
+        android:text="Save  Profile"
+        android:textColor="@color/colorWhite" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

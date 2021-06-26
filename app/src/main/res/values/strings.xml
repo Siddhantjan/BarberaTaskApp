@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BarberaTaskApp</string>
+    <string name="text1">Currently We Don\'t have any user in Firebase</string>
+</resources>
